@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(14, 74, 94);
+}
+
+/*start tic tac toe word*/
+.containar .tic_tac_word {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*end tic tac toe word style*/
+/*start xo grid style*/
+.containar .xo_grid {
+    width: 400px;
+    height: 400px;
+    outline: 3px #fff solid;
+} 
+
+.containar .xo_grid .col_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containar .xo_grid .col_1 div {
+    width: calc(400px/3);
+    height: calc(400px/3);
+    border: 3px #fff solid;
+    cursor: pointer;
+}
+
+.containar .xo_grid .col_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containar .xo_grid .col_2 div {
+    border: 3px #fff solid;
+    width: calc(400px/3);
+    height: calc(400px/3);
+    cursor: pointer;
+}
+
+.containar .xo_grid .col_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containar .xo_grid .col_3 div {
+    width: calc(400px/3);
+    height: calc(400px/3);
+    border: 3px #fff solid;
+    cursor: pointer;
+}
+
+@media (max-width : 767px){
+    .containar .xo_grid {
+        width: 300px;
+        height: 300px;
+    }
+
+    .containar .xo_grid .col_1 div {
+        width: calc(300px/3);
+        height: calc(300px/3);
+    }
+
+    .containar .xo_grid .col_2 div {
+        width: calc(300px/3);
+        height: calc(300px/3);
+    }
+
+    .containar .xo_grid .col_3 div {
+        width: calc(300px/3);
+        height: calc(300px/3);
+    }
+}
+.x_o{
+    font-size: 85px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end tic tac toe word style*/
+/*start winner word style*/
+.containar .winne_word {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+/*end winner word style*/

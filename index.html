@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;800&family=Outfit:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <title>X_O_Game</title>
+</head>
+
+<body>
+    <div class="containar">
+        <!--start tic tac toe word-->
+        <div class="tic_tac_word" data-aos="fade-left" data-aos-duration="1500"
+            data-aos-anchor-placement="center-bottom">
+            <h1>Tic_Tac_Toe</h1>
+        </div>
+        <!--end tic tac toe word-->
+        <!--start xo grid-->
+        <div class="xo_grid" data-aos="zoom-in" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+            <div class="col_1">
+                <div class="x_o" id="div1" onclick = "game(this.id)"></div>
+                <div class="x_o" id="div2" onclick = "game(this.id)"></div>
+                <div class="x_o" id="div3" onclick = "game(this.id)"></div>
+            </div>
+            <div class="col_2">
+                <div class="x_o" id="div4" onclick = "game(this.id)"></div>
+                <div class="x_o" id="div5" onclick = "game(this.id)"></div>
+                <div class="x_o" id="div6" onclick = "game(this.id)"></div>
+            </div>
+            <div class="col_3">
+                <div class="x_o" id="div7" onclick = "game(this.id)"></div>
+                <div class="x_o" id="div8" onclick = "game(this.id)"></div>
+                <div class="x_o" id="div9" onclick = "game(this.id)"></div>
+            </div>
+        </div>
+        <!--end xo grid-->
+        <!--start winner word-->
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+            <h1 class="winne_word" id="winne_word"></h1>
+            <h1 class="relod"></h1>
+        </div>
+        <!--end winner word-->
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
