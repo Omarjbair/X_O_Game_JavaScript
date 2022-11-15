@@ -59,6 +59,10 @@ function winner(){
        else if(win[2] === win[5] && win[5] === win[8] && win[2] != ''){
               who_win(2,5,8);
        }
+       else if(win[1] != '' && win[2] != '' && win[3] != '' && win[4] != '' && win[5] != '' && win[6] != '' && win[7] != '' && win[8] != '' && win[9] != ''){
+              result.innerHTML = 'Its Draw'
+              re_game()
+       }
 }
 
 
