@@ -20,6 +20,9 @@ function game(id) {
 
 function who_win(number1, number2, number3) {
        result.innerHTML = `the winner is ${win[number1]}`;
+       document.getElementById('div'+number1).style.backgroundColor= "black";
+       document.getElementById('div'+number2).style.backgroundColor= "black";
+       document.getElementById('div'+number3).style.backgroundColor= "black";
        re_game();
 }
 
